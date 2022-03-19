@@ -1,16 +1,17 @@
+@import url('./scss/variable.css');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+  background-color: var(--primary-color);
+  font-family: var(--primary-font,  sans-serif ) ;
+  color: var(--text-color);
+  font-size: var(--base-width*16);
+   line-height: 1.3 rem; 
+  }
 
 * {
   box-sizing: border-box;
 }
+

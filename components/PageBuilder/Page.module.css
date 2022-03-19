@@ -1,0 +1,19 @@
+.blockWrapper {
+  padding: 0px 24px;
+}
+
+.order {
+  font-family: var(--highlight-font,  sans-serif );
+}
+
+.order-0 {
+  font-size: 2rem;
+}
+
+.order-1 {
+  font-size: 1.5rem;
+}
+
+.order-2 {
+  font-size: 1.3em;
+}

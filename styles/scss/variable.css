@@ -1,0 +1,22 @@
+/*
+  This file should define all variables for fonts and colors
+ */
+
+@import 'color.css';
+@import 'font.css';
+
+:root{
+/* Color */
+--primary-color:  var(--eerie-black);
+--highlight-color:  var(--white);
+--text-color: var(--white);
+
+/* Font */
+ --primary-font: 'firaCodeCondensed';
+--primary-font-italic: 'firaCodeCondensedItalic';
+--highlight-font: 'FiraCodeCondensedBold'; 
+
+
+--base-width: 1px;
+--padding-left: var(--base-width*4)
+}

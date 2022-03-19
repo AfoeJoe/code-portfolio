@@ -1,0 +1,11 @@
+
+.comment {
+   color: var(--pistachio); 
+   padding: 5px 24px;
+   margin: var(--base-width);
+   font-family: var(--primary-font-italic);
+}
+
+.comment + .comment{
+  padding-top: 0;
+}
