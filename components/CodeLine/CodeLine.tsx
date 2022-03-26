@@ -4,7 +4,7 @@ interface ICodeLine {
   content: string;
 }
 const CodeLine: React.FC<ICodeLine> = ({ content }) => {
-  return <div className={styles.line}>{content}</div>;
+  return <li className={styles.line}>{content}</li>;
 };
 
 export default CodeLine;

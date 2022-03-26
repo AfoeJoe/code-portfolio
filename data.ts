@@ -26,58 +26,67 @@ export type IField = BlockProps | CommentProps | LineProps;
 export type CustomNode = Record<string, IField>;
 
 const data: CustomNode = {
-  key0: {
+  key00: {
     type: 'block',
     title: 'Okunola Joshua',
     descendants: {
-      key1: {
+      key10: {
         type: 'comment',
         content: 'JS Developer',
       },
-      key2: {
+      key11: {
         type: 'comment',
         content: 'Okunola_joshua@yahoo.com',
       },
-      key3: {
+      key12: {
         type: 'comment',
         content: '+79270434722',
       },
-      key0: {
+      key13: {
         type: 'block',
-        title: 'About Me',
+        title: 'Employment',
         descendants: {
-          key4: {
-            type: 'line',
-            content:
-              'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eiu opti Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eiu opti',
+          key20: {
+            content: 'JavaScript Developer Intern, Open Solutions (Apr 2021 – Jun 2021)',
+          },
+          key21: {
+            content: 'JavaScript Developer - React, Open Solutions (Jul 2021 – Ongoing)',
           },
         },
       },
-      key5: {
+      key14: {
         type: 'block',
         title: 'Education',
         descendants: {
           key0: {
-            type: 'line',
-            content: 'Bsc ',
+            content: 'Electronics Engineering, KSPEU (Sept. 2015– June 2021)',
           },
           key1: {
-            type: 'line',
-            content: 'School 21 ',
+            content: 'School 21, Ru (school 42, France and US) (Aug 2020 – Apr 2021) ',
           },
         },
       },
-      key6: {
+      key15: {
         type: 'block',
-        title: 'Work Experience',
+        title: 'Projects',
         descendants: {
           key0: {
-            type: 'line',
-            content: 'Bsc ',
+            content: 'Telemedicine ',
           },
           key1: {
-            type: 'line',
-            content: 'School 21 ',
+            content: 'FinTech  ',
+          },
+        },
+      },
+      key16: {
+        type: 'block',
+        title: 'Languages',
+        descendants: {
+          key0: {
+            content: 'JavaScript; TypeScript; React.JS, Next.JS; NodeJS; HTML; CSS;',
+          },
+          key1: {
+            content: 'VS Code;  Figma; Jira; MacOS, Windows; Linux;',
           },
         },
       },

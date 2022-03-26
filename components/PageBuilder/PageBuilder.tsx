@@ -8,7 +8,7 @@ import {
   IField,
   LineProps
   } from '../../data';
-import { classnames, getTypeAndBuild } from '../../utils';
+import { classnames } from '../../utils';
 
 interface IPageBuilder {
   data: CustomNode;
@@ -34,7 +34,7 @@ const PageBuilder: React.FC<IPageBuilder> = ({ data, order = 0 }) => {
         return <Comment content={(other as CommentProps).content} key={key} type="code" />;
 
       default:
-        return <CodeLine content={(other as LineProps).content} {...other} />;
+        return <CodeLine content={(other as LineProps).content} key={key} {...other} />;
     }
   });
   return <>{page}</>;

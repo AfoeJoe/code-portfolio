@@ -1,12 +1,14 @@
 .container {
-  padding: 0 2rem;
-  background-color: black;
+  /* padding: 0 2rem; */
+
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  transition: all 0.5s;
 }
 
 .main {
-/*   height: 100vh;
- */  min-height: 100vh;
-  max-width: 1280px;  
+  min-height: 100vh;
+  max-width: 1280px;
   flex: 1;
   display: flex;
   flex-direction: column;

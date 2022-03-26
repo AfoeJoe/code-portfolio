@@ -1,0 +1,20 @@
+.cvButton {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: var(--text-color);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color);
+  padding: 9px 23px;
+  text-decoration: none;
+}
+
+/* .cvButton:hover {
+  background-color: #0688fa;
+}
+ */
+.cvButton:active {
+  bottom: 41px;
+}

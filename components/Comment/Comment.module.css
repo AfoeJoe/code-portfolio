@@ -1,9 +1,9 @@
 
 .comment {
-   color: var(--pistachio); 
+   color: var(--comment-color); 
    padding: 5px 24px;
    margin: var(--base-width);
-   font-family: var(--primary-font-italic);
+    font-family: var(--comment-font); 
 }
 
 .comment + .comment{

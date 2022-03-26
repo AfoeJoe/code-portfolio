@@ -2,3 +2,7 @@
 .line {
    padding-inline-start: 24px;
 }
+
+.line + .line{
+   padding-top: 12px;
+}

@@ -3,20 +3,26 @@
  */
 
 @import 'color.css';
-@import 'font.css';
 
-:root{
-/* Color */
---primary-color:  var(--eerie-black);
---highlight-color:  var(--white);
---text-color: var(--white);
+:root {
+  /* Color */
+  --primary-color: var(--eerie-black);
+  --highlight-color: var(--white);
+  --text-color: var(--white);
+  --comment-color: var(--pistachio);
 
-/* Font */
- --primary-font: 'firaCodeCondensed';
---primary-font-italic: 'firaCodeCondensedItalic';
---highlight-font: 'FiraCodeCondensedBold'; 
+  /* Font */
+  --primary-safe-font: sans-serif;
+  --comment-font: Courier;
 
+  /* Sizes */
+  --base-width: 1px;
+  --padding-left: var(--base-width * 4);
+}
 
---base-width: 1px;
---padding-left: var(--base-width*4)
+[data-theme='light'] {
+  --primary-color: var(--white);
+  --highlight-color: var(--eerie-black);
+  --text-color: var(--eerie-black);
+  --comment-color: var(--green-pigment);
 }
