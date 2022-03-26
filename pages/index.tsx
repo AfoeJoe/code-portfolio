@@ -20,7 +20,7 @@ const Home: NextPage = () => {
           content="Profesional FullStack Javascript developer. Expertise in both frontend and backend technologies. Experience in using modern technologies like react , next js and node to craft a professional looking and performant websites and web apps."
         />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest.json" />
+        <link rel="manifest" href="/site.webmanifest" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
       <main className={styles.main}>

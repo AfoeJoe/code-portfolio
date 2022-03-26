@@ -12,9 +12,10 @@ const Toggle = () => {
         onClick={toggleTheme}
         /* loader={myLoader} */ src={theme === Theme.dark ? '/icons8-sun.svg' : '/moon-and-stars-svgrepo-com.svg'}
         className={styles.icon}
-        alt="Picture of the author"
+        alt="Light and bblack theme toggle"
         width={40}
         height={40}
+        layout="responsive"
       />
     </div>
   );

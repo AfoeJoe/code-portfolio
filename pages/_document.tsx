@@ -8,7 +8,7 @@ import {
 
 export default function Document() {
   return (
-    <Html>
+    <Html lang="en">
       <Head />
       <body>
         <Main />
