@@ -6,7 +6,7 @@ const CVButton = () => {
 
   return (
     <div className={styles.toggleWrapper}>
-      <a href={'/Okunola_Joshua-CV.pdf'} download="Okunola_Josh-CV.pdf" className={styles.cvButton}>
+      <a href={'/OkunolaJoshua.pdf'} download="OkunolaJoshuaCV.pdf" className={styles.cvButton}>
         Download CV
       </a>
     </div>
