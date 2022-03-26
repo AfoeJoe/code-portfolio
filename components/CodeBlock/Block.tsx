@@ -1,7 +1,8 @@
 interface IBlock {
-  title: string;
   content: Node;
+  title: string;
 }
+
 const CodeBlock: React.FC<IBlock> = ({ title, content }) => {
   return (
     <div>
