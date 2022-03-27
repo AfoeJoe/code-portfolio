@@ -23,7 +23,7 @@ interface IHeadingFormatter {
 
 const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children }) => {
   switch (order) {
-    case 1:
+    case 0:
       return (
         <>
           <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
@@ -31,7 +31,7 @@ const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children 
           <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
         </>
       );
-    case 2:
+    case 1:
       return (
         <>
           <h2 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h2>
