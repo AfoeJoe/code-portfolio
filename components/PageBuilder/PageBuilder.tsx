@@ -34,18 +34,18 @@ const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children 
     case 1:
       return (
         <>
-          <h2 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h2>
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
           {children}
-          <h2 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h2>
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
         </>
       );
 
     default:
       return (
         <>
-          <h3 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h3>
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
           {children}
-          <h3 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h3>
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
         </>
       );
   }
