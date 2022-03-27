@@ -27,7 +27,7 @@ const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children 
       return (
         <>
           <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
-          children;
+          {children}
           <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
         </>
       );
@@ -35,7 +35,7 @@ const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children 
       return (
         <>
           <h2 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h2>
-          children;
+          {children}
           <h2 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h2>
         </>
       );
@@ -44,7 +44,7 @@ const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children 
       return (
         <>
           <h3 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h3>
-          children;
+          {children}
           <h3 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h3>
         </>
       );
