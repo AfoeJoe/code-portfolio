@@ -14,6 +14,42 @@ interface IPageBuilder {
   data: CustomNode;
   order?: number;
 }
+
+interface IHeadingFormatter {
+  // chi: CustomNode;
+  order?: number;
+  title: string;
+}
+
+const HeadingFormatter: React.FC<IHeadingFormatter> = ({ order, title, children }) => {
+  switch (order) {
+    case 1:
+      return (
+        <>
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
+          children;
+          <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
+        </>
+      );
+    case 2:
+      return (
+        <>
+          <h2 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h2>
+          children;
+          <h2 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h2>
+        </>
+      );
+
+    default:
+      return (
+        <>
+          <h3 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h3>
+          children;
+          <h3 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h3>
+        </>
+      );
+  }
+};
 const PageBuilder: React.FC<IPageBuilder> = ({ data, order = 0 }) => {
   if (!data) return null;
 
@@ -25,9 +61,12 @@ const PageBuilder: React.FC<IPageBuilder> = ({ data, order = 0 }) => {
         const { title, descendants } = other as BlockProps;
         return (
           <div key={key} className={styles.blockWrapper}>
-            <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
+            <HeadingFormatter title={title} order={order}>
+              <PageBuilder data={descendants} order={order + 1} />
+            </HeadingFormatter>
+            {/*            <h1 className={classnames(styles.order, styles[`order-${order}`])}>{`${title} `}&#123;</h1>
             {<PageBuilder data={descendants} order={order + 1} />}
-            <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1>
+            <h1 className={classnames(styles.order, styles[`order-${order}`])}>&#125;</h1> */}
           </div>
         );
       case 'comment':
