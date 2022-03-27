@@ -62,7 +62,7 @@ const data: CustomNode = {
             content: 'BEng - Electronics Engineering, KSPEU (Sept. 2015 – Jun. 2021)',
           },
           key1: {
-            content: 'School 21 coding school, Ru (also 42 school, Fr and US) (Aug.. 2020 – Apr. 2021) ',
+            content: 'School 21 coding school, Ru (also 42 school, Fr and US) (Aug. 2020 – Apr. 2021) ',
           },
         },
       },
