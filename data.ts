@@ -32,11 +32,11 @@ const data: CustomNode = {
     descendants: {
       key10: {
         type: 'comment',
-        content: 'JS Developer',
+        content: 'Fullstack JavaScript Developer',
       },
       key11: {
         type: 'comment',
-        content: 'Okunola_joshua@yahoo.com',
+        content: 'okunola_joshua@yahoo.com',
       },
       key12: {
         type: 'comment',
@@ -47,10 +47,10 @@ const data: CustomNode = {
         title: 'Employment',
         descendants: {
           key20: {
-            content: 'JavaScript Developer Intern, Open Solutions (Apr 2021 – Jun 2021)',
+            content: 'Frontend JavaScript Developer Intern, Open Solutions Inc. (Apr. 2021 – Jun. 2021)',
           },
           key21: {
-            content: 'JavaScript Developer - React, Open Solutions (Jul 2021 – Ongoing)',
+            content: 'Full  Stack JavaScript Developer - React, Open Solutions Inc. (Jul. 2021 – Ongoing)',
           },
         },
       },
@@ -59,10 +59,10 @@ const data: CustomNode = {
         title: 'Education',
         descendants: {
           key0: {
-            content: 'Electronics Engineering, KSPEU (Sept. 2015– June 2021)',
+            content: 'BEng - Electronics Engineering, KSPEU (Sept. 2015 – Jun. 2021)',
           },
           key1: {
-            content: 'School 21, Ru (school 42, France and US) (Aug 2020 – Apr 2021) ',
+            content: 'School 21 coding school, Ru (also 42 school, Fr and US) (Aug.. 2020 – Apr. 2021) ',
           },
         },
       },
@@ -71,10 +71,10 @@ const data: CustomNode = {
         title: 'Projects',
         descendants: {
           key0: {
-            content: 'Telemedicine ',
+            content: 'Telemedicine Project (commercial) ',
           },
           key1: {
-            content: 'FinTech  ',
+            content: 'FinTech  Project (commercial)',
           },
         },
       },
