@@ -7,12 +7,12 @@ export const enum Theme {
 }
 
 export const ThemeContext = createContext({
-  theme: Theme.dark,
+  theme: Theme.light,
   toggleTheme: () => null,
 });
 
 const ThemeProvider: FC = ({ children }) => {
-  const [theme, setTheme] = useLocalStorage<Theme>('theme', Theme.dark, {
+  const [theme, setTheme] = useLocalStorage<Theme>('theme', Theme.light, {
     serializer: e => JSON.stringify(e),
     parser: e => JSON.parse(e),
   });

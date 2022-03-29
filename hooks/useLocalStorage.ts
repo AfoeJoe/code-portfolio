@@ -1,4 +1,9 @@
-import { useEffect, useMemo, useState } from 'react';
+import {
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useState
+  } from 'react';
 
 type Serializer<T> = (object: T | undefined) => string;
 type Parser<T> = (val: string) => T | undefined;
@@ -27,7 +32,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
 
   const [storedValue, setValue] = useState<T>();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     try {
       const item = window.localStorage.getItem(key);
       const res: T = item ? parser(item) : defaultValue;
