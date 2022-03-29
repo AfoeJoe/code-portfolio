@@ -32,7 +32,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
 
   const [storedValue, setValue] = useState<T>();
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     try {
       const item = window.localStorage.getItem(key);
       const res: T = item ? parser(item) : defaultValue;
