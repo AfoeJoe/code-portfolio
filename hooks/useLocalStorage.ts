@@ -32,7 +32,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
 
   const [storedValue, setValue] = useState<T>();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     try {
       const item = window.localStorage.getItem(key);
       const res: T = item ? parser(item) : defaultValue;
@@ -42,7 +42,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
     }
   }, []);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof window === 'undefined') return;
 
     const updateLocalStorage = () => {
