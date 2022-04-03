@@ -10,7 +10,9 @@ import type { NextPage } from 'next';
 
 const Home: NextPage = () => {
   const { theme } = useThemeContext();
-
+  if (!theme) {
+    return null;
+  }
   return (
     <div data-theme={theme} className={styles.container}>
       <Head>
