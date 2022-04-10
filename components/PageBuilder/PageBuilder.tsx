@@ -70,7 +70,14 @@ const PageBuilder: React.FC<IPageBuilder> = ({ data, order = 0 }) => {
           </div>
         );
       case 'comment':
-        return <Comment content={(other as CommentProps).content} key={key} type="code" />;
+        return (
+          <Comment
+            content={(other as CommentProps).content}
+            key={key}
+            link={(other as CommentProps).link}
+            type="code"
+          />
+        );
 
       default:
         return <CodeLine content={(other as LineProps).content} key={key} {...other} />;

@@ -1,11 +1,13 @@
-
 .comment {
-   color: var(--comment-color); 
-   padding: 5px 24px;
-   margin: var(--base-width);
-    font-family: var(--comment-font); 
+  color: var(--comment-color);
+  padding: 5px 24px;
+  margin: var(--base-width);
+  font-family: var(--comment-font);
+  word-break: break-all;
+  display: block;
+  text-decoration: none;
 }
 
-.comment + .comment{
+.comment + .comment {
   padding-top: 0;
 }

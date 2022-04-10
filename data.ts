@@ -14,6 +14,7 @@ export type BlockProps = {
 export type CommentProps = {
   type: 'comment';
   content: string;
+  link?: string;
 };
 
 export type LineProps = {
@@ -37,10 +38,12 @@ const data: CustomNode = {
       key11: {
         type: 'comment',
         content: 'okunola_joshua@yahoo.com',
+        link: 'mailto:okunola_joshua@yahoo.com',
       },
       key12: {
         type: 'comment',
-        content: 'https://www.linkedin.com/in/okunola-joshua/',
+        content: 'linkedin.com/in/okunola-joshua/',
+        link: 'https://www.linkedin.com/in/okunola-joshua/',
       },
       key13: {
         type: 'comment',
