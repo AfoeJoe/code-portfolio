@@ -53,7 +53,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
     } catch (e) {
       logger(e);
     }
-  }, [storedValue]);
+  }, [key, logger, serializer, storedValue]);
 
   useEffect(() => {
     if (!syncData) return;
@@ -72,7 +72,7 @@ function useLocalStorage<T>(key: string, defaultValue?: T, options?: Options<T>)
 
     window.addEventListener('storage', handleStorageChange);
     return () => window.removeEventListener('storage', handleStorageChange);
-  }, [key, syncData]);
+  }, [key, logger, parser, syncData]);
 
   return [storedValue, setValue];
 }

@@ -40,9 +40,13 @@ const data: CustomNode = {
       },
       key12: {
         type: 'comment',
-        content: '+79270434722',
+        content: 'https://www.linkedin.com/in/okunola-joshua/',
       },
       key13: {
+        type: 'comment',
+        content: '+79270434722',
+      },
+      key14: {
         type: 'block',
         title: 'Employment',
         descendants: {
@@ -54,7 +58,7 @@ const data: CustomNode = {
           },
         },
       },
-      key14: {
+      key15: {
         type: 'block',
         title: 'Education',
         descendants: {
@@ -66,7 +70,7 @@ const data: CustomNode = {
           },
         },
       },
-      key15: {
+      key16: {
         type: 'block',
         title: 'Projects',
         descendants: {
@@ -78,7 +82,7 @@ const data: CustomNode = {
           },
         },
       },
-      key16: {
+      key17: {
         type: 'block',
         title: 'Languages',
         descendants: {
